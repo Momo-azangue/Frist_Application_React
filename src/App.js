@@ -1,8 +1,9 @@
+import React from "react";
 import "./App.css";
 
-import Expenses from "./componements/Expenses";
+import Expenses from "./componements/Expenses/Expenses";
 function App() {
-  const expenses =  [
+  const expenses = [
     {
       id: 'e1',
       title: "Toilet Paper",
@@ -28,11 +29,16 @@ function App() {
       date: new Date(2021, 5, 12)
     }
   ];
- 
+
+  // return React.createElement('div', 
+  // {}, 
+  // React.createElement('h2', {}, "Let's get started!"),
+  // React.createElement(Expenses, {items: expenses})
+  // );
 
   return (
     <div className="App">
-      <h2>Let's get started!</h2>
+      <h2 className="h21">Let's get started!</h2>
       <Expenses items={expenses} />   
     </div>
   );
