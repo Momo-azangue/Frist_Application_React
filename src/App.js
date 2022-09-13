@@ -1,9 +1,9 @@
 import React from "react";
 import "./App.css";
-
+import NewExpense from "./NewExpense/NewExpense";
 import Expenses from "./componements/Expenses/Expenses";
 
-const App = () => {
+const App = () =>  {
   const expenses = [
     {
       id: 'e1',
@@ -38,9 +38,9 @@ const App = () => {
   // );
 
   return (
-    <div className="App">
-      <h2 className="h21">Let's get started!</h2>
-      <Expenses items={expenses} />   
+    
+      <div className="App">  <NewExpense /> 
+        <Expenses items={expenses} />
     </div>
   );
 }
