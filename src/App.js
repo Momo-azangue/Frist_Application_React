@@ -39,10 +39,10 @@ const App = () =>  {
 
   return (
     
-      <div className="App">  <NewExpense /> 
+<div className="App">  <NewExpense /> 
         <Expenses items={expenses} />
     </div>
   );
-}
+};
 
 export default App;
